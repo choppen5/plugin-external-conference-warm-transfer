@@ -60,8 +60,7 @@ exports.handler = async function(context, event, callback) {
     .create({
       to,
       from,
-      earlyMedia: true,
-      endConferenceOnExit: false
+      earlyMedia: true
     });
   console.log('Participant response properties:');
   Object.keys(participantsResponse).forEach(key => {
